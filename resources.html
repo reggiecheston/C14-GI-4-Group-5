@@ -7,15 +7,20 @@
     <link href="resources.css" rel='stylesheet' />
 </head>
 <body>
-    <nav>
-
-    </nav>
-     <!-- Navagation code for Nav bar ^  -->
-    <header>
-        <img src="logo.png" alt="Logo" />
-        <h1> Resources & <br /> <br />Support Sign-up</h1>
+    <header class="main-header">
+        <img class="main-header__logo" src="logo.png" alt="Back The Block Logo"/>
+        <h2>BACK <br />THE <br />BLOCK</h2>
     </header>
-    <!-- Header info (Title of page and Logo) ^ -->
+    <section>
+        <nav class="navbar">
+            <ul class="navbar__items">
+                <li class="navbar__item"><a href="#">About</a></li>
+                <li class="navbar__item"><a href="#">Legislation</a></li>
+                <li class="navbar__item"><a href="#">Contact</a></li>
+                <li class="navbar__item"><a href="#"><button class="main-header__button-cta">Support our Cause</button></a></li>
+            </ul>
+        </nav>
+    </section>
     <main>
        <h2>Welcome to our Resources and Support Sign-up! This form is your gateway to joining a community dedicated to addressing gentrification challenges. 
         By sharing your information, you allow us to connect you with valuable resources, support, and opportunities to make a positive impact. 
@@ -69,8 +74,50 @@
         </section>
     </div>
     </main>
-    <footer>
-        
+    <footer class="footer-nav">
+        <section class="footer-nav__section">
+            <h5 class="footer-nav__section--title">Resources</h5>
+            <ul class="footer-nav__links footer-nav__resources">
+                <li class="footer-nav__link"><a href="#">Link</a></li>
+                <li class="footer-nav__link"><a href="#">Link</a></li>
+                <li class="footer-nav__link"><a href="#">Link</a></li>
+            </ul>
+        </section>
+        <section class="footer-nav__section">
+            <h5 class="footer-nav__section--title">Info</h5>
+            <ul class="footer-nav__links footer-nav__resources">
+                <li class="footer-nav__link"><a href="#">Link</a></li>
+                <li class="footer-nav__link"><a href="#">Link</a></li>
+                <li class="footer-nav__link"><a href="#">Link</a></li>
+            </ul>
+        </section>
+        <section class="footer-nav__section">
+            <h5 class="footer-nav__section--title">Legal</h5>
+            <ul class="footer-nav__links footer-nav__resources">
+                <li class="footer-nav__link"><a href="#">Link</a></li>
+                <li class="footer-nav__link"><a href="#">Link</a></li>
+                <li class="footer-nav__link"><a href="#">Link</a></li>
+            </ul>
+        </section>
+        <section class="footer-nav__section">
+            <h5 class="footer-nav__section--title">Connect With Us</h5>
+            <ul class="footer-nav__links footer-nav__links--social">
+                <li><a href="https://github.com/reggiecheston" target="_blank" rel="noopener noreferrer"><img
+                    src="assets/icons/BLK/big-twitter-logo.png" alt="Github" width="20" height="20" /></a></li>
+              <li><a href="https://www.instagram.com/reggiechaleur" target="_blank" rel="noopener noreferrer"><img
+                    src="assets/icons/BLK/instagram-new-2016-glyph-logo-84CB825424-seeklogo.com.png" alt="Instagram"
+                    width="20" height="20" /></a></li>
+              <li><a href="https://www.linkedin.com/in/reggiecheston/" target="_blank" rel="noopener noreferrer"><img
+                    src="assets/icons/BLK/linkedin-black-icon-logo-ECC426C572-seeklogo.com.png" alt="LinkedIn"
+                    width="20" height="20" /></a></li>
+            </ul>
+            <p class="copyright-info">© 2023 Back the Block - All Rights Reserved
+                Registered</p>
+        </section>
+        <section></section>
+        <section></section>
+        <section></section>
     </footer>
+    <!-- This is the code for my footer -->
 </body>
 </html>
