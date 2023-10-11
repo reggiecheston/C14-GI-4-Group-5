@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #816c61;
+}
+
+.Construction {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #cfcfea;
+   color: #2A2C24;
+   padding: 1%;
+   margin: 5%;
+   border-radius: 25px;
+
+}
+
+.heading {
+    font-size: large;
+    background-color: #cfcfea;
+}
+
+.summary {
+   font-size: medium;
+   background-color: #cfcfea;
+   
+}
+
+.highways {
+    height: 35%;
+    width: 35%;
+    padding: 1%;
+    background-color: #cfcfea;
+    
+}
+
+.Charlottes {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #cfcfea;
+   color: #2A2C24;
+   padding: 1%;
+   margin: 5%;
+   border-radius: 25px;
+}
+
+.test {
+    flex-direction: column;
+}
+
+.Biddleville {
+    height: 40%;
+    width: 40%;
+    padding: 1%;
+    background-color: #cfcfea;
+}
+
+.Future {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #cfcfea;
+   color: #2A2C24;
+   padding: 1%;
+   margin: 5%;
+   border-radius: 25px;
+}
+
+.skyscraper {
+    height: 40%;
+    width: 40%;
+    /* padding: 1%; */
+    background-color: #cfcfea;
+}
+
