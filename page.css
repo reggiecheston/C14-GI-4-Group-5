@@ -1,37 +1,41 @@
 * {
     padding: 0;
     margin: 0;
-    background-color: #816c61;
+}
+
+body {
+    background-image: url(images/mural.png);
+    background-size: 100% 100%;
 }
 
 .Construction {
    display: flex;
    align-items: center;
    justify-content: center;
-   background-color: #cfcfea;
-   color: #2A2C24;
+   background-color: #647b64;
+   color: #1c1a16;
    padding: 1%;
    margin: 5%;
    border-radius: 25px;
-
+   box-shadow: 5px 5px .60em #2a2c24;
 }
 
 .heading {
     font-size: large;
-    background-color: #cfcfea;
+    background-color:#647b64;
+    padding: 4%;
 }
 
 .summary {
    font-size: medium;
-   background-color: #cfcfea;
-   
+   background-color: #647b64;
 }
 
 .highways {
     height: 35%;
-    width: 35%;
+    width: 50%;
     padding: 1%;
-    background-color: #cfcfea;
+    background-color: #647b64;
     
 }
 
@@ -39,39 +43,40 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   background-color: #cfcfea;
-   color: #2A2C24;
+   background-color: #647b64;
+   color: #1c1a16;
    padding: 1%;
    margin: 5%;
    border-radius: 25px;
+   box-shadow: 5px 5px .60em #2a2c24;
 }
 
-.test {
+.paragraph {
     flex-direction: column;
+    margin: 6%;
 }
 
 .Biddleville {
     height: 40%;
-    width: 40%;
-    padding: 1%;
-    background-color: #cfcfea;
+    width: 55%;
+    background-color:#647b64;
 }
 
 .Future {
    display: flex;
    align-items: center;
    justify-content: center;
-   background-color: #cfcfea;
-   color: #2A2C24;
+   background-color: #647b64;
+   color: #1c1a16;
    padding: 1%;
    margin: 5%;
    border-radius: 25px;
+   box-shadow: 5px 5px .60em #2a2c24;
 }
 
 .skyscraper {
     height: 40%;
     width: 40%;
-    /* padding: 1%; */
-    background-color: #cfcfea;
+    background-color:#647b64;
 }
 
