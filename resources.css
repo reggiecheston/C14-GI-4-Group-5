@@ -1,1 +1,14 @@
+header{
+    display: flex;
+    justify-content: space-evenly;
+}
 
+section{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#button{
+    display: flex;
+    justify-content: center;
+}
