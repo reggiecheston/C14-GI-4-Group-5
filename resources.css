@@ -103,10 +103,6 @@ button{
     width: 100%;
     background-color: rgb(118, 136, 88);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* position: absolute;
-    top: 20%; /* Place the navbar below the header */
-    /* z-index: 1000;
-    overflow: scroll;  */
 
 }
 
@@ -190,10 +186,7 @@ button{
     align-items: center;
     padding: 0;
 }
-h5{
-    /* margin: 0;
-    padding: 0; */
-}
+
 
 .footer-nav__links--social a {
     margin: 0 1rem 0 1rem;
