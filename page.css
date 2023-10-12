@@ -28,10 +28,11 @@ body {
 }
 
 .summary {
-   font-size: 1vw;
+   font-size: medium;
    word-spacing: 5px;
    letter-spacing: 2%;
    background-color: rgb(118, 136, 88);
+   font-family: 'Exo 2', sans-serif;;
 }
 
 .highways {
