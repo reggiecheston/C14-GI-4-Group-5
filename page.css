@@ -6,6 +6,7 @@
 body {
     background-image: url(images/mural.png);
     background-size: 100% 100%;
+    /* background-repeat: no-repeat; */
 }
 
 .Construction {
@@ -25,6 +26,7 @@ body {
     background-color:rgb(118, 136, 88);
     padding: 4%;
     color: rgb(189, 77, 46);
+    font-family: 'Exo 2', sans-serif;
 }
 
 .summary {
@@ -36,7 +38,7 @@ body {
 }
 
 .highways {
-    height: 35%;
+    height: 100%;
     width: 50%;
     padding: 1%;
     border-radius: 25px;
@@ -61,8 +63,8 @@ body {
 }
 
 .Biddleville {
-    height: 40%;
-    width: 45%;
+    height: 100%;
+    width: 43%;
     padding: 1%;
     border-radius: 25px;
     background-color:rgb(118, 136, 88);
@@ -80,10 +82,28 @@ body {
 }
 
 .skyscraper {
-    height: 70%;
+    height: 100%;
     width: 40%;
     padding: 1%;
     border-radius: 25px;
     background-color:rgb(118, 136, 88);
 }
 
+@media only screen and (max-width: 747px) {
+    .Construction, .Charlottes, .Future{
+        display: inherit;
+    }
+
+    .summary {
+        padding-bottom: 2%;
+    }
+
+    .highways, .Biddleville, .skyscraper{
+        height: 40%;
+        width: 100%;
+    }
+
+    .heading {
+        font-size: 4vw;
+    }
+}
