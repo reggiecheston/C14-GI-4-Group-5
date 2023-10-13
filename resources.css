@@ -200,3 +200,24 @@ footer img{
     width: 25%;
     height: 25%;
 }
+
+/* Form Validation */
+
+.span_error{
+    position: relative;
+    bottom: 12px;
+    right: 17px;
+    font-size: 15px;
+    color: rgb(160, 4, 4);
+}
+
+#submit_error{
+    position: relative;
+    bottom: -60px;
+    right: 80px;
+    color: rgb(160, 4, 4);
+}
+
+.span_error i{
+    color: seagreen;
+}
