@@ -4,7 +4,14 @@
 }
 
 .info__section {
-    height: 75vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info__section--subsection {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,19 +21,19 @@
     background-color: rgb(104, 94, 69);
 }
 
+
 .info__section--about-image {
     width: 75%;
-    margin: auto;
+    padding: 4rem 0 4rem 0;
 }
 
 .info__section--about-copy {
     width: 75%;
     margin: auto;
+    padding-bottom: 4rem;
 }
 
-.info__section > div {
-    width: 50%;
-}
+
 
 .info__section--legislation {
     background-color: rgb(22, 32, 5);
@@ -35,11 +42,13 @@
 .info__section--legislation-copy {
     width: 75%;
     margin: auto;
+    color: white;
+    padding: 4rem 0 4rem 0;
 }
 
 .info__section--legislation-image {
     width: 75%;
-    margin: auto;
+    padding-bottom: 4rem;
 }
 
 h3 {
@@ -62,11 +71,28 @@ p {
     margin-top: 1rem;
 }
 
+button:hover, 
+button:active {
+    background-color: rgb(190, 118, 98);
+    cursor: pointer;
+}
+
 .cta__section .contact__section {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgb(118, 136, 88);
+}
+
+@media (min-width: 769px) {
+    .info__section {
+        height: 75vh;
+        flex-direction: row;
+    }
+
+    .info__section > div {
+        width: 50%;
+    }
 }
 
