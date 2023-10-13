@@ -28,7 +28,7 @@
         Together, we can create a more inclusive and resilient community.
        </h2> 
         <!-- Intro pagaragh for the purpose of this page -->
-    <form>
+    <form onsubmit="return validateForm()">
         <section id="names" >
             <span><label for="fname">First name</label> <br /> <br />
             <input type="text" id="fname" placeholder="Enter your first name" onkeyup="validateFname()"/><span class="span_error" id="fname-error"></span></span>
@@ -38,16 +38,16 @@
         <!-- First input section (names) -->
         <section id="contact" >
             <span><label for="phone">Phone Number</label> <br /> <br />
-            <input type="tel" id="phone" name="phone" placeholder="(XXX) XXX-XXXX"  /><span class="span_error" id="phone-error"></span></span> 
+            <input type="tel" id="phone" name="phone" placeholder="(XXX) XXX-XXXX" onkeyup="validatePhone()" /><span class="span_error" id="phone-error"></span></span> 
            <span><label for="email">Email</label> <br /> <br />
-            <input type="email" id="email" placeholder="Example@example.com" /><span class="span_error" id="email-error"></span></span>
+            <input type="email" id="email" placeholder="Example@example.com" onkeyup="validateEmail()"/><span class="span_error" id="email-error"></span></span>
         </section>
         <!-- Second input section (contact info) -->
         <section id="houseLo" >
             <span><label for="address">Address</label> <br /> <br />
             <input type="text" id="address" placeholder="Street Address" /></span> 
             <span><label for="zip">Zip Code</label> <br /> <br />
-            <input type="number" id="zip" name="zip" placeholder="X X X X X"  /><span class="span_error" id="zip-error"></span></span> 
+            <input type="number" id="zip" name="zip" placeholder="X X X X X"  onkeyup="validateZip()"/><span class="span_error" id="zip-error"></span></span> 
         </section>
         <!-- Third input section (location info) -->
         <section id="issues">
@@ -71,7 +71,7 @@
         </section>
         <!-- Dropdown menus for addtional support -->
         <section id="button">
-            <button type="submit" id="submit">Submit</button> <br />
+            <button type="submit" id="submit" >Submit</button> <br />
             <span id="submit_error"></span>
         </section>
     </form>
