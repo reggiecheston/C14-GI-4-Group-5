@@ -87,7 +87,7 @@ body {
     border-radius: 25px;
     background-color:rgb(118, 136, 88);
 }
-
+   
 @media only screen and (max-width: 747px) {
     .Construction, .Charlottes, .Future{
         display: inherit;
