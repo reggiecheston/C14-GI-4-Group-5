@@ -98,6 +98,7 @@
 }
 
 button {
+    height: auto;
     color: white;
     background-color: rgb(189, 77, 46);
     border: none;
