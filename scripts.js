@@ -38,7 +38,12 @@ customValue = () => {
 validName = () => {
     nameInp = document.getElementById("cus_name").value;
     if ((nameInp !== "" )&& (nameInp !== undefined)) {
-        return(true);
+        if (nameInp.match(/^[A-Za-z\s]*$/)) {
+            return(true);
+        }
+        else {
+            return(false);
+        }
     }
     else {
         return(false);
@@ -56,10 +61,10 @@ isValid = () => {
         
     }
     else if ((!customValue()) || (validName()) && (donEmail())){
-        alert("Please Enter a valid Amount");
+        alert("Please Enter a valid Amount (USD)");
     }
     else if ((!validName()) || (customValue()) &&  (donEmail())){
-        alert("Please Enter a Valid Name");
+        alert("Please Enter a Valid Name (A-Z Only)");
         
     }
     else if ((customValue()) && (validName()) || (!donEmail())) {
