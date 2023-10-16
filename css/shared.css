@@ -85,7 +85,7 @@
 
 .navbar__item {
     list-style: none;
-    margin: 0 4vw 0 4vw;
+    margin: 0 5vw 0 5vw;
 }
 
 .navbar__item a {
@@ -103,7 +103,6 @@
 }
 
 button {
-    height: auto;
     color: white;
     background-color: rgb(189, 77, 46);
     border: none;
