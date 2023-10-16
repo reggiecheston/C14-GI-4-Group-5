@@ -4,25 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="about.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <link href="shared.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap" rel="stylesheet">
     <title>Back The Block About Us</title>
 </head>
 <body>
-    <main>
-    <h1>About Us</h1>
-
-   <section class="whoarewe">
-    <h2>Who Are We?</h2>
-        <p>Here at Back The Block we believe that every community, regardless of its economic or social status, deserves the opportunity to thrive while preserving its cultural heritage.
-         Our dedicated team of advocates work hard to raise awareness about the impact of gentrification on vulnerable neighborhoods and empower local residents to actively participate in shaping their own destiny.</p>
-    
+    <header class="main-header">
+        <img class="main-header__logo" src="assets/logo/btb-logo.png" alt="Back The Block Logo"/>
+        <h2>BACK THE BLOCK</h2>
+    </header>
+    <section>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <ul class="navbar__items">
+                <li class="navbar__item"><a href="#">About</a></li>
+                <li class="navbar__item"><a href="#">Legislation</a></li>
+                <li class="navbar__item"><a href="#">Contact</a></li>
+                <li class="navbar__item"><a href="#"><button class="main-header__button-cta">Support our Cause</button></a></li>
+            </ul>
+        </nav>
     </section>
+    
+    <main>
+    <!-- <h1>About Us</h1> -->
 
-    <section class="important">
-        <h2>Idk I'll Figure It Out</h2>
-        <p>While the aim of gentrification in the Charlotte, NC area may be to foster economic development by attracting businesses and opportunities, it often results in the displacement of lower-income residents, erodes the distinctive character and cultural essence of a community, 
-        and exacerbates issues of inequality. This phenomenon is observable in our own neighborhoods, such as areas like Noda.</p>
+   <section class="row">
+    <div class="whoarewe">
+    <div class="col s6">
+    <h2>Who Are We?</h2>
+    <p>Here at Back The Block we believe that every community, regardless of its economic or social status, deserves the opportunity to thrive while preserving its cultural heritage.
+     Our dedicated team of advocates work hard to raise awareness about the impact of gentrification on vulnerable neighborhoods and empower local residents to actively participate in shaping their own destiny.</p></div>
+    </div>
+</div>
+    </section>
+    <section class="row">
+    <div class="pics">
+    <div class="col s2">
+        <img class="responsive-img" src="headshots/Jaylin.jpeg" alt="pic of brenda"></div>
+    <div class="col s2">
+        <img class="responsive-img" src="headshots/brynn.jpg" alt="picture of reggie"></div>
+    <div class="col s2">
+            <img class="responsive-img" src="headshots/reggie.jpg" alt="picture of brynn"></div>
+    <div class="col s2">
+            <img class="responsive-img" src="headshots/brenda.jpg" alt="pic of jaylin"></div>
+    <div class="col s2">
+        <img class="responsive-img" src="headshots/sincere.jpg" alt="pic of sincere"></div>
+    </div>
+    
+    </div>
+    </div>
+    </section>
+   
+
+    
+
+    <section class="row">
+    <div class="important">
+    <div class="col s6">
+        <h2>Gentrification in Charlotte</h2>
+        <p>Gentrification in the Charlotte, NC area may initially aim to stimulate economic development by attracting businesses and opportunities. 
+            However, it often results in the displacement of lower-income residents, erodes the distinctive character and cultural essence of a community, and exacerbates issues of inequality. 
+            This phenomenon is not just a distant concept; it's visible right in our own neighborhoods, such as NoDa. As new businesses, restaurants, and high-end housing developments flourish in NoDa, property values soar, 
+            leading to escalating rents and housing prices. This, in turn, poses challenges for long-standing residents and artists who struggle to afford to remain in the neighborhood. 
+            Unfortunately, this issue is pervasive in the Charlotte area, and we are committed to raising awareness about it.</p></div>
+    </div>
     </section>
     </main>
+    <footer class="footer-nav">
+        <section class="footer-nav__section">
+            <h5 class="footer-nav__section--title">Resources</h5>
+            <ul class="footer-nav__links footer-nav__resources">
+                <li class="footer-nav__link"><a href="#">Link</a></li>
+                <li class="footer-nav__link"><a href="#">Link</a></li>
+                <li class="footer-nav__link"><a href="#">Link</a></li>
+            </ul>
+        </section>
+        <section class="footer-nav__section">
+            <h5 class="footer-nav__section--title">Info</h5>
+            <ul class="footer-nav__links footer-nav__resources">
+                <li class="footer-nav__link"><a href="#">Link</a></li>
+                <li class="footer-nav__link"><a href="#">Link</a></li>
+                <li class="footer-nav__link"><a href="#">Link</a></li>
+            </ul>
+        </section>
+        <section class="footer-nav__section">
+            <h5 class="footer-nav__section--title">Legal</h5>
+            <ul class="footer-nav__links footer-nav__resources">
+                <li class="footer-nav__link"><a href="#">Link</a></li>
+                <li class="footer-nav__link"><a href="#">Link</a></li>
+                <li class="footer-nav__link"><a href="#">Link</a></li>
+            </ul>
+        </section>
+        <section class="footer-nav__section">
+            <h5 class="footer-nav__section--title">Connect With Us</h5>
+            <ul class="footer-nav__links footer-nav__links--social">
+                <li><a href="https://github.com/reggiecheston" target="_blank" rel="noopener noreferrer"><img
+                    src="assets/icons/BLK/big-twitter-logo.png" alt="Github" width="20" height="20" /></a></li>
+              <li><a href="https://www.instagram.com/reggiechaleur" target="_blank" rel="noopener noreferrer"><img
+                    src="assets/icons/BLK/instagram-new-2016-glyph-logo-84CB825424-seeklogo.com.png" alt="Instagram"
+                    width="20" height="20" /></a></li>
+              <li><a href="https://www.linkedin.com/in/reggiecheston/" target="_blank" rel="noopener noreferrer"><img
+                    src="assets/icons/BLK/linkedin-black-icon-logo-ECC426C572-seeklogo.com.png" alt="LinkedIn"
+                    width="20" height="20" /></a></li>
+            </ul>
+            <p class="copyright-info">© 2023 Back the Block - All Rights Reserved
+                Registered</p>
+        </section>
+        <section></section>
+        <section></section>
+        <section></section>
+    </footer>
 </body>
 </html>
