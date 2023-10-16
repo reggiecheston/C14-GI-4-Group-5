@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(images/mural.png);
+    background-size: 100% 100%;
+}
+
+.Construction {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color:rgb(118, 136, 88);
+   color: #1c1a16;
+   padding: 1%;
+   margin: 5%;
+   border-radius: 25px;
+   box-shadow: 5px 5px .35em #2a2c24;
+}
+
+.heading {
+    font-size: 3vw;
+    background-color:rgb(118, 136, 88);
+    padding: 4%;
+    color: rgb(189, 77, 46);
+    font-family: 'Exo 2', sans-serif;
+}
+
+.summary {
+   font-size: medium;
+   word-spacing: 5px;
+   letter-spacing: 2%;
+   background-color: rgb(118, 136, 88);
+   font-family: 'Exo 2', sans-serif;;
+}
+
+.highways {
+    height: 100%;
+    width: 50%;
+    padding: 1%;
+    border-radius: 25px;
+    background-color:rgb(118, 136, 88);
+    
+}
+
+.Charlottes {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: rgb(118, 136, 88);
+   color: #1c1a16;
+   margin: 4%;
+   border-radius: 25px;
+   box-shadow: 5px 5px .35em #2a2c24;
+}
+
+.paragraph {
+    flex-direction: column;
+    margin: 6%;
+}
+
+.Biddleville {
+    height: 100%;
+    width: 43%;
+    padding: 1%;
+    border-radius: 25px;
+    background-color:rgb(118, 136, 88);
+}
+
+.Future {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: rgb(118, 136, 88);
+   color: #1c1a16;
+   margin: 5%;
+   border-radius: 25px;
+   box-shadow: 5px 5px .35em #2a2c24;
+}
+
+.skyscraper {
+    height: 100%;
+    width: 40%;
+    padding: 1%;
+    border-radius: 25px;
+    background-color:rgb(118, 136, 88);
+}
+   
+@media only screen and (max-width: 747px) {
+    .Construction, .Charlottes, .Future{
+        display: inherit;
+    }
+
+    .summary {
+        padding-bottom: 2%;
+    }
+
+    .highways, .Biddleville, .skyscraper{
+        height: 40%;
+        width: 100%;
+    }
+
+    .heading {
+        font-size: 4vw;
+    }
+}
