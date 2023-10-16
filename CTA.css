@@ -1,5 +1,4 @@
 body {
-    /* background-color: rgb(116, 116, 116); */
     background-image: url(assets/images/graffiti-background.jpeg);
 }
 
@@ -74,7 +73,8 @@ body {
     font-size: 1.78vw;
     text-align: center;
     padding-top: 1vw;
-    color: white
+    color: white;
+    
 }
 
 .bottom_body {
@@ -82,6 +82,10 @@ body {
     background-color: rgb(104, 137, 113);
     border-radius: .75em;
     box-shadow: 10px 5px 5px rgb(0, 0, 0);
+    font-size: 2vw;
+    text-align: center;
+    margin-top: auto;
+    color: rgb(255, 255, 255);
 }
 
 .donate_btn {
@@ -172,12 +176,7 @@ body {
 }
 
 @media only screen and (max-width: 750px) {
-    .bottom_body {
-        grid-area: 6 / 2 / 7 / 4;
-        background-color: rgb(104, 137, 113);
-        border-radius: .75em;
-        box-shadow: 10px 5px 5px rgb(0, 0, 0);
-    }
+    
 
     .CTA_Head {
         grid-area: 1 / 1 / 1 / 7;
@@ -193,9 +192,29 @@ body {
         background-color: rgb(255, 255, 255);
         padding: 1.16em;
         border-radius: .75em;
-        opacity: 85%;
         box-shadow: 10px 5px 5px rgb(0, 0, 0);
         font-size: 2.7vw;
     }
 
+}
+
+@media only screen and (max-width: 1300px) { 
+    .bottom_body {
+        grid-area: 7 / 4 / 8 / 6;
+        background-color: rgb(104, 137, 113);
+        border-radius: .75em;
+        box-shadow: 10px 5px 5px rgb(0, 0, 0);
+    }
+    .left_body {
+        background-color: rgb(104, 137, 113);
+        grid-area: 3 / 2 / 8 / 4;
+        border-radius: .75em;
+        box-shadow: 10px 5px 5px rgb(0, 0, 0);
+    }
+    .right_body_text {
+        opacity: 100%;
+    }
+    .right_head {
+        opacity: 100%;
+    }
 }
