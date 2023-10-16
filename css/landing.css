@@ -1,6 +1,19 @@
 .banner__section {
-    height: calc(100vh - 15rem);
-    background-image: url("../assets/images/IMG_1995.jpg");
+    aspect-ratio: 4 / 3;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0)), url("../assets/images/IMG_1995.jpg");
+    background-position: 0 25%;
+    background-size: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color: white;
+    margin: 0 2rem 2rem 2rem;
 }
 
 .info__section {
@@ -53,7 +66,7 @@
 
 h3 {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
@@ -77,15 +90,69 @@ button:active {
     cursor: pointer;
 }
 
-.cta__section .contact__section {
-    height: 100vh;
+.cta__section {
+    height: 40vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: start;
+    background-color: rgb(22, 32, 5);
+}
+
+.cta__section--container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1rem;
+    margin: 0 .5rem;
+}
+
+.cta__section--copy, .cta__section--buttons {
+    display: flex;
     justify-content: center;
+}
+
+.cta__section--copy {
+    padding: 3rem 3rem 0rem 3rem;
+}
+
+.cta__section--button-resources {
+    background-color: rgb(22, 32, 5);
+}
+
+.cta__section--button-resources:hover,
+.cta__section--button-resources:active {
     background-color: rgb(118, 136, 88);
 }
 
+.cta__section--buttons a {
+    margin: 3rem .5rem;
+}
+
+
+@media (min-width: 376px) {
+    .cta__section--container {
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+        margin: 0 2rem;
+    }
+    .cta__section {
+        height: 35vh;
+    }
+}
+
+
 @media (min-width: 769px) {
+    .banner__section {
+        aspect-ratio: 0;
+        height: calc(100vh - 15rem);
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
     .info__section {
         height: 75vh;
         flex-direction: row;
@@ -93,6 +160,27 @@ button:active {
 
     .info__section > div {
         width: 50%;
+    }
+
+    .cta__section {
+        flex-direction: row;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .cta__section--container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 50rem;
+    }
+
+    .cta__section--copy, .cta__section--buttons {
+        width: 40%;
+    }
+
+    .cta__section--copy {
+        padding-top: 0;
     }
 }
 
