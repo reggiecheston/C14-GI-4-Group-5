@@ -10,10 +10,9 @@ form{
     width: 100%;
     
 }
-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#nav{
+    padding: 0%;
+    padding-top: 0%;
 }
 
 h1{
@@ -23,7 +22,7 @@ h2{
     margin: 5%;
     text-align: center;
 }
-section{
+.section{
     display: flex;
     justify-content: space-evenly;
     padding: 5%;
@@ -75,6 +74,14 @@ button{
     cursor: pointer;
     border: 3px solid black;
     box-shadow: 10px 5px 5px #888474;
+}
+.main-header__button-cta{
+    color: white;
+    background-color: rgb(189, 77, 46);
+    border: none;
+    border-radius: .5rem;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -180,7 +187,7 @@ form{
     }
     .span_error{
         position: relative;
-        bottom: 80px;
+        bottom: 5px;
         right: 17px;
         font-size: 15px;
         color: rgb(160, 4, 4);

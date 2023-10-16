@@ -6,10 +6,18 @@
     <title>Resources and Support</title>
     <link rel="stylesheet" href="css/shared.css"/>
     <link href="resources.css" rel='stylesheet' />
+    <link rel="stylesheet" href="css/landing.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c3792c3a55.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section>
+    <header class="main-header">
+        <img class="main-header__logo" src="assets/logo/btb-logo.png" alt="Back The Block Logo"/>
+        <h2>BACK THE BLOCK</h2>
+    </header>
+    <section id="nav">
         <!-- Navbar -->
         <nav class="navbar">
             <div class="navbar__icons">
@@ -17,7 +25,7 @@
                   alt="Open Menu" />
             </div>
             <ul class="navbar__items">
-                <li class="navbar__item"><a href="#">About</a></li>
+                <li class="navbar__item"><a href="index.html">About</a></li>
                 <li class="navbar__item"><a href="#">Legislation</a></li>
                 <li class="navbar__item"><a href="resources.html">Resources</a></li>
                 <li class="navbar__item"><a href="#"><button class="main-header__button-cta">Support our Cause</button></a></li>
@@ -48,28 +56,28 @@
         </section>
         <!-- Intro pagaragh for the purpose of this page -->
     <form onsubmit="return validateForm()">
-        <section id="names" >
+        <section id="names" class="section">
             <span><label for="fname">First name</label> <br /> <br />
             <input type="text" id="fname" placeholder="Enter your first name" onkeyup="validateFname()"/><span class="span_error" id="fname-error"></span></span>
             <span><label for="lname">Last name</label> <br /> <br />
             <input type="text" id="lname" placeholder="Enter your last name" onkeyup="validateLname()"/><span class="span_error" id="lname-error"></span></span>
         </section>
         <!-- First input section (names) -->
-        <section id="contact" >
+        <section id="contact" class="section">
             <span><label for="phone">Phone Number</label> <br /> <br />
             <input type="tel" id="phone" name="phone" placeholder="(XXX) XXX-XXXX" onkeyup="validatePhone()" /><span class="span_error" id="phone-error"></span></span> 
            <span><label for="email">Email</label> <br /> <br />
             <input type="email" id="email" placeholder="Example@example.com" onkeyup="validateEmail()"/><span class="span_error" id="email-error"></span></span>
         </section>
         <!-- Second input section (contact info) -->
-        <section id="houseLo" >
+        <section id="houseLo" class="section">
             <span><label for="address">Address</label> <br /> <br />
             <input type="text" id="address" placeholder="Street Address" /></span> 
             <span><label for="zip">Zip Code</label> <br /> <br />
             <input type="number" id="zip" name="zip" placeholder="X X X X X"  onkeyup="validateZip()"/><span class="span_error" id="zip-error"></span></span> 
         </section>
         <!-- Third input section (location info) -->
-        <section id="issues">
+        <section id="issues" class="section">
            <span><label for="aoc">Area Of Concern</label> <br /> <br />
             <select id="aoc">
                 <option value="">--Whats Wrong?--</option>
@@ -79,7 +87,7 @@
                 <option value="community">Community Initiative</option>
             </select></span> 
             <span><label for="interests">Interests</label> <br /> <br />
-            <select id="interests">
+            <select id="interests" class="section">
                 <option value="">--What do you need?--</option>
                 <option value="ahousing">Affordable Housing</option>
                 <option value="legal_assist">Legal Assistance</option>
@@ -89,7 +97,7 @@
             </select></span> 
         </section>
         <!-- Dropdown menus for addtional support -->
-        <section id="button">
+        <section id="button" class="section">
             <button type="submit" id="submit" >Submit</button> <br />
             <span id="submit_error"></span>
         </section>
