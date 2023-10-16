@@ -1,0 +1,220 @@
+body {
+    background-image: url(assets/images/graffiti-background.jpeg);
+}
+
+.main_body {
+    display: grid;
+    grid-template-columns: 16vw 16vw 16vw 16vw 16vw 16vw;
+    grid-template-rows: 14vw 14vw 14vw 14vw 14vw 14vw 14vw;
+    gap: 15px;
+    background: rgba(186, 190, 186, 0.4)
+    
+}
+
+.left_body {
+    background-color: rgb(104, 137, 113);
+    grid-area: 3 / 2 / 6 / 4;
+    border-radius: .75em;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);
+}
+
+.right_body {
+    grid-area: 3 / 4 / 6 / 6;
+    border-radius: .75em;
+}
+
+.left_heading {
+    background-color: rgb(11, 38, 17);
+    padding: .30em;
+    border-radius: .30em;
+    font-size: 2vw;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.CTA_Head {
+   grid-area: 1 / 1 / 1 / 7;
+   text-align: center;
+   margin: auto;
+   color: whitesmoke;
+   text-shadow: 5px 2px 5px rgb(0, 0, 0);
+   font-weight: bold;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.right_head {
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+    border-radius: .75em;
+    opacity: 85%;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);
+    font-size: 2vw;
+}
+
+.right_body_text {
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+    border-radius: .75em;
+    opacity: 85%;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);
+    font-size: 1.3vw;
+}
+
+.responsive-img {
+    padding: 2em 0em 0em 0em;
+}
+
+.description {
+    grid-area: 2 / 2 / 2 / 6;
+    background-color: rgb(104, 137, 113);
+    border-radius: .75em;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);
+    font-size: 1.78vw;
+    text-align: center;
+    padding-top: 1vw;
+    color: white;
+    
+}
+
+.bottom_body {
+    grid-area: 6 / 2 / 7 / 6;
+    background-color: rgb(104, 137, 113);
+    border-radius: .75em;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);
+    font-size: 2vw;
+    text-align: center;
+    margin-top: auto;
+    color: rgb(255, 255, 255);
+}
+
+.donate_btn {
+    background-color: transparent;
+    padding: 1.3vw;
+    font-size: 3vw;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    color: rgb(255, 255, 255);
+}
+
+.donate_btn:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.left_body_btns {
+    display: flex;
+    padding-top: 3vw;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+#cus_amount {
+    background-color: transparent;
+    font-size: 2vw;
+    text-decoration: none;
+    padding: 1vw .5vw 1vw .5vw;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    margin-top: 1.8vw;
+    width: 86.3%;
+}
+
+.cus_amount {
+    display: flex;
+    justify-content: center;
+}
+
+.cont_info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#cus_name {
+    background-color: transparent;
+    font-size: 2vw;
+    text-decoration: none;
+    padding: 1vw .5vw 1vw .5vw;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    margin-top: 1.8vw;
+    width: 86.3%;
+}
+
+#cus_email {
+    background-color: transparent;
+    font-size: 2vw;
+    text-decoration: none;
+    padding: 1vw .5vw 1vw .5vw;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    margin-top: 1vw;
+    width: 86.3%;
+}
+
+.sub_btn {
+    background-color: transparent;
+    padding: 1vw;
+    font-size: 2vw;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    color: rgb(255, 255, 255);
+}
+
+.sub_btn:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.line {
+    margin: auto;
+    margin-top: 2vw;
+    padding: .14vw;
+    background: rgb(16, 41, 28);
+    width: 95%;
+}
+
+@media only screen and (max-width: 750px) {
+    
+
+    .CTA_Head {
+        grid-area: 1 / 1 / 1 / 7;
+        text-align: center;
+        margin: auto;
+        color: whitesmoke;
+        text-shadow: 5px 2px 5px rgb(0, 0, 0);
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     }
+
+     .right_body_text {
+        background-color: rgb(255, 255, 255);
+        padding: 1.16em;
+        border-radius: .75em;
+        box-shadow: 10px 5px 5px rgb(0, 0, 0);
+        font-size: 2.7vw;
+    }
+
+}
+
+@media only screen and (max-width: 1300px) { 
+    .bottom_body {
+        grid-area: 7 / 4 / 8 / 6;
+        background-color: rgb(104, 137, 113);
+        border-radius: .75em;
+        box-shadow: 10px 5px 5px rgb(0, 0, 0);
+    }
+    .left_body {
+        background-color: rgb(104, 137, 113);
+        grid-area: 3 / 2 / 8 / 4;
+        border-radius: .75em;
+        box-shadow: 10px 5px 5px rgb(0, 0, 0);
+    }
+    .right_body_text {
+        opacity: 100%;
+    }
+    .right_head {
+        opacity: 100%;
+    }
+}
