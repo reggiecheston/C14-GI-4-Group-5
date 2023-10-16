@@ -11,17 +11,38 @@
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="main-header">
+
+     <header class="main-header">
         <img class="main-header__logo" src="assets/logo/btb-logo.png" alt="Back The Block Logo"/>
         <h2>BACK THE BLOCK</h2>
     </header>
     <section>
+        <!-- Navbar -->
         <nav class="navbar">
+            <div class="navbar__icons">
+                <img class="hamburger-menu navbar__icon" src="Assets/icons/WHT/1024px-Hamburger_icon_white.svg.png"
+                  alt="Open Menu" />
+            </div>
             <ul class="navbar__items">
                 <li class="navbar__item"><a href="#">About</a></li>
                 <li class="navbar__item"><a href="#">Legislation</a></li>
-                <li class="navbar__item"><a href="#">Contact</a></li>
+                <li class="navbar__item"><a href="#">Resources</a></li>
                 <li class="navbar__item"><a href="#"><button class="main-header__button-cta">Support our Cause</button></a></li>
+            </ul>
+            <a href="#" class="mobile-nav__logo">
+                <img class="mobile-nav__logo--image" src="assets/logo/btb-logo.png" alt="Back The Block Logo"/>
+                <h3>BACK THE BLOCK</h3>
+            </a>
+            <div class="navbar__icons">
+                <img class="close-menu navbar__icon" src="Assets/icons/WHT/Cross_icon_(white).svg.png" alt="Close Menu" />
+            </div>
+        </nav>
+        <nav class="mobile-nav">
+            <ul class="mobile-nav__items">
+              <li class="mobile-nav__item"><a href="#">About</a></li>
+              <li class="mobile-nav__item"><a href="#">Legislation</a></li>
+              <li class="mobile-nav__item"><a href="#">Resources</a></li>
+              <li class="mobile-nav__item"><a href="#"><button class="main-header__button-cta">Support our Cause</button></a></li>
             </ul>
         </nav>
     </section>
