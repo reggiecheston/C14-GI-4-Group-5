@@ -2,20 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Non-Profit</title>
+    <title>Resources and Support</title>
     <link rel="stylesheet" href="css/shared.css"/>
-    <link rel="stylesheet" href="css/landing.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap" rel="stylesheet">
+    <link href="resources.css" rel='stylesheet' />
+    <script src="https://kit.fontawesome.com/c3792c3a55.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="main-header">
-        <img class="main-header__logo" src="assets/logo/btb-logo.png" alt="Back The Block Logo"/>
-        <h2>BACK THE BLOCK</h2>
-    </header>
     <section>
         <!-- Navbar -->
         <nav class="navbar">
@@ -47,37 +40,60 @@
         </nav>
     </section>
     <main>
-        <section class="banner__section">
-            <header>
-                <!-- <img class="banner__section--image" src="assets/images/IMG_1995.jpg"/> -->
-            </header>
+        <section id="into">
+            <h2>Welcome to our Resources and Support Sign-up! This form is your gateway to joining a community dedicated to addressing gentrification challenges. 
+            By sharing your information, you allow us to connect you with valuable resources, support, and opportunities to make a positive impact. 
+            Together, we can create a more inclusive and resilient community.
+            </h2> 
         </section>
-        <section class="info__section info__section--about">
-            <div class="info__section--about-left info__section--subsection">
-                <img class="info__section--about-image" src="assets/images/biddleville.jpeg"/>
-            </div>
-            <div class="info__section--about-right info__section--subsection">
-                <div class="info__section--about-copy">
-                    <h3>About Our Cause</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus exercitationem aut magnam laboriosam! Magni similique qui illum! Repellat quod, praesentium ad porro consequatur aut modi iusto excepturi autem facilis ipsum quae sed ducimus hic architecto, amet quidem neque sequi voluptatem? Mollitia aliquid ex excepturi error eos nulla illum harum dolores necessitatibus distinctio, nobis rem tempore molestias, dignissimos, repellat praesentium tempora?</p>
-                    <div class="info__section--button"><a href="#"><button>learn more</button></a></div>
-                </div>
-            </div>
+        <!-- Intro pagaragh for the purpose of this page -->
+    <form onsubmit="return validateForm()">
+        <section id="names" >
+            <span><label for="fname">First name</label> <br /> <br />
+            <input type="text" id="fname" placeholder="Enter your first name" onkeyup="validateFname()"/><span class="span_error" id="fname-error"></span></span>
+            <span><label for="lname">Last name</label> <br /> <br />
+            <input type="text" id="lname" placeholder="Enter your last name" onkeyup="validateLname()"/><span class="span_error" id="lname-error"></span></span>
         </section>
-        <section class="info__section info__section--legislation">
-            <div class="info__section--legislation-left info__section--subsection">
-                <div class="info__section--legislation-copy ">
-                    <h3>Local Legislation</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure earum impedit placeat deleniti vel suscipit cum! Nam debitis, ipsa quibusdam sunt porro a hic magnam similique neque obcaecati modi, nulla eveniet deserunt alias esse voluptate rerum eligendi fugiat consequuntur odio, in nostrum! Itaque aliquid recusandae nobis cum officia corporis nam autem, fugit molestiae quia! Corrupti corporis unde omnis error nisi.</p>
-                    <div class="info__section--button"><a href="#"><button>learn more</button></a></div>
-                </div>
-            </div>
-            <div class="info__section--legislation-right info__section--subsection">
-                <img class="info__section--legislation-image" src="assets/images/biddleville.jpeg"/>
-            </div>
+        <!-- First input section (names) -->
+        <section id="contact" >
+            <span><label for="phone">Phone Number</label> <br /> <br />
+            <input type="tel" id="phone" name="phone" placeholder="(XXX) XXX-XXXX" onkeyup="validatePhone()" /><span class="span_error" id="phone-error"></span></span> 
+           <span><label for="email">Email</label> <br /> <br />
+            <input type="email" id="email" placeholder="Example@example.com" onkeyup="validateEmail()"/><span class="span_error" id="email-error"></span></span>
         </section>
-        <section class="cta__section"></section>
-        <section class="contact__section"></section>
+        <!-- Second input section (contact info) -->
+        <section id="houseLo" >
+            <span><label for="address">Address</label> <br /> <br />
+            <input type="text" id="address" placeholder="Street Address" /></span> 
+            <span><label for="zip">Zip Code</label> <br /> <br />
+            <input type="number" id="zip" name="zip" placeholder="X X X X X"  onkeyup="validateZip()"/><span class="span_error" id="zip-error"></span></span> 
+        </section>
+        <!-- Third input section (location info) -->
+        <section id="issues">
+           <span><label for="aoc">Area Of Concern</label> <br /> <br />
+            <select id="aoc">
+                <option value="">--Whats Wrong?--</option>
+                <option value="housing">Housing affordability</option>
+                <option value="legal_issues">Legal Issues</option>
+                <option value="environment_impact">Environmental Impact</option>
+                <option value="community">Community Initiative</option>
+            </select></span> 
+            <span><label for="interests">Interests</label> <br /> <br />
+            <select id="interests">
+                <option value="">--What do you need?--</option>
+                <option value="ahousing">Affordable Housing</option>
+                <option value="legal_assist">Legal Assistance</option>
+                <option value="environment_impact">Environmental Impact</option>
+                <option value="finance">Financial Counseling</option>
+                <option value="aid">Aid Programs</option>
+            </select></span> 
+        </section>
+        <!-- Dropdown menus for addtional support -->
+        <section id="button">
+            <button type="submit" id="submit" >Submit</button> <br />
+            <span id="submit_error"></span>
+        </section>
+    </form>
     </main>
     <footer class="footer-nav">
         <div class="footer-nav__container">
@@ -126,6 +142,7 @@
         </div>
 
     </footer>
+    <!-- This is the code for my footer -->
+    <script src="script.js"></script>
 </body>
-<script src="scripts.js"></script>
 </html>
