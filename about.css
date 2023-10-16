@@ -1,20 +1,11 @@
 body{
-/* background-color: #7B7664; */
 background: url(nodamural.jpeg) no-repeat;
 background-size: 100% 100%;
 }
 
 
-.whoarewe  {
-    margin: 2rem;
-    padding: 2rem;
-    border-radius: 30px;
-    margin-top: 3rem;
-    box-shadow: 5px 5px .35em;
 
-/* background-color: rgb(118, 136, 88); */
-/* font-family: 'Exo 2', sans-serif; */
-}
+
 
 p, h2{
 font-size: 20px;
@@ -24,14 +15,6 @@ font-family: 'Exo 2', sans-serif;
 }
 
 
-.important  {
-margin: 2rem;
-padding: 2rem;
-border-radius: 30px;
-margin-top: 3rem;
-box-shadow: 5px 5px .35em;
-/* font-family: 'Exo 2', sans-serif; */
-}
 
 .col{
 
@@ -40,12 +23,20 @@ box-shadow: 5px 5px .35em;
 
 }
 
-.s6{
+.s12 , .s10, .s9 {
 background-color: rgb(118, 136, 88);
 margin: 2rem;
 padding: 5rem;
 }
 
+
 img {
     border-radius: 30px;
 }
+
+
+
+
+
+
+
