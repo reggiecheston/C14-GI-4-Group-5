@@ -15,6 +15,13 @@ form{
     padding-top: 0%;
 }
 
+.heading {
+    font-size: 3vw;
+    background-color:rgb(118, 136, 88);
+    padding: 4%;
+    font-family: 'Exo 2', sans-serif;
+}
+
 h1{
     margin-left: 10px;
     padding-top: 30px;}
