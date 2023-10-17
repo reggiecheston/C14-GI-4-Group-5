@@ -18,6 +18,7 @@
 .main-header h2 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 2rem;
+    font-weight: bold;
 }
 
 .main-header__logo {
@@ -81,16 +82,19 @@
     justify-content: center;
     align-items: center;
     height: 4rem;
+    padding-left: 0;
 }
 
 .navbar__item {
     list-style: none;
-    margin: 0 5vw 0 5vw;
+    margin: 0 4vw 0 4vw;
 }
 
 .navbar__item a {
     text-decoration: none;
     color: black;
+    padding: 0;
+    display: inline;
 }
 
 .navbar__item a:hover,
@@ -100,9 +104,11 @@
 .footer-nav__link a:hover,
 .footer-nav__link a:active {
     text-decoration: underline;
+    background-color: rgba(118, 136, 88, 0);
 }
 
 button {
+    height: auto;
     color: white;
     background-color: rgb(189, 77, 46);
     border: none;
@@ -206,6 +212,8 @@ button:active {
 
 .footer-nav h5 {
     font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin: 0;
 }
 
 .footer-nav__section--title {
